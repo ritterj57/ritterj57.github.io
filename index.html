@@ -57,14 +57,29 @@ gas              131951     4.04     0.04     3.94     3.98     4.05     4.07   
 
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="Stata Regression" class="anchor" href="Stata Regression"><span class="octicon octicon-link"></span></a>Summary Statistics.</h3>
+<pre><code>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+. reg ENTRIESn_hourly  meanpressurei meandewpti fog rain meantempi precipi gas stat*
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+      Source |       SS       df       MS              Number of obs =  131951
+-------------+------------------------------           F(471,131479) =  201.71
+       Model |  3.0230e+11   471   641824185           Prob > F      =  0.0000
+    Residual |  4.1836e+11131479  3181986.09           R-squared     =  0.4195
+-------------+------------------------------           Adj R-squared =  0.4174
+       Total |  7.2066e+11131950  5461641.08           Root MSE      =  1783.8
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+-------------------------------------------------------------------------------
+ENTRIESn_ho~y |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+--------------+----------------------------------------------------------------
+meanpressurei |  -315.1928    40.5116    -7.78   0.000    -394.5948   -235.7908
+   meandewpti |   -5.36711   .9471193    -5.67   0.000    -7.223447   -3.510773
+          fog |   79.29446   16.38374     4.84   0.000     47.18264    111.4063
+         rain |  -37.85319   15.40281    -2.46   0.014    -68.04243   -7.663953
+    meantempi |  -12.08405   1.413467    -8.55   0.000    -14.85442   -9.313675
+      precipi |   26.85721   15.11139     1.78   0.076    -2.760841    56.47526
+          gas |  -1827.147   247.7972    -7.37   0.000    -2312.825   -1341.469
+</code></pre>
 
 <h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
