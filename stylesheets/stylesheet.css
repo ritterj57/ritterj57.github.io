@@ -92,7 +92,8 @@ header h2 {
 .inner {
   position: relative;
   width: 940px;
-  margin: 0 auto;
+  margin-left: auto ;
+  margin-right: auto ;
 }
 
 #content-wrapper {
@@ -154,11 +155,11 @@ code, pre {
 code {
   background-color: #f2f8fc;
   border: solid 1px #dbe7f3;
-  padding: 0 3px;
+  aside: 0 3px;
 }
 
 pre {
-  padding: 20px;
+  aside: 20px;
   background: #fff;
   text-shadow: none;
   overflow: auto;
@@ -168,7 +169,7 @@ pre code {
   color: #2879d0;
   background-color: #fff;
   border: none;
-  padding: 0;
+  aside: 0;
 }
 
 ul, ol, dl {
@@ -182,7 +183,7 @@ hr {
   height: 1px;
   line-height: 1px;
   margin-top: 1em;
-  padding-bottom: 1em;
+  aside-bottom: 1em;
   border: none;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
