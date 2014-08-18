@@ -92,13 +92,15 @@ header h2 {
 .inner {
   position: relative;
   width: 940px;
-  margin: 0 auto;
+  margin-left: auto ;
+  margin-right: auto ;
 }
 
 #content-wrapper {
   border-top: solid 1px #fff;
   padding-top: 30px;
-  margin: 0 auto;
+  margin-left: auto ;
+  margin-right: auto ;
 }
 
 #main-content {
@@ -223,7 +225,7 @@ form {
   content: "/";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin: 0 auto;
+  margin-left: -0.9em;
 }
 
 #main-content h2 {
@@ -237,7 +239,7 @@ form {
   content: "//";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin: 0 auto;
+  margin-left: -1.5em;
 }
 
 #main-content h3 {
@@ -253,7 +255,7 @@ form {
   content: "///";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin: 0 auto;
+  margin-left: -2em;
 }
 
 #main-content h4 {
@@ -267,7 +269,7 @@ h4:before {
   content: "////";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin: 0 auto;
+  margin-left: -2.8em;
 }
 
 #main-content h5 {
@@ -279,7 +281,7 @@ h5:before {
   content: "/////";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin: 0 auto;
+  margin-left: -3.2em;
 }
 
 #main-content h6 {
@@ -291,7 +293,7 @@ h6:before {
   content: "//////";
   color: #9ddcff;
   padding-right: 0.3em;
-  margin: 0 auto;
+  margin-left: -3.7em;
 }
 
 p {
