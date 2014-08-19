@@ -52,7 +52,7 @@ My Email Address</a> </p>
 <p><img src = "images/subwaymap-page-001.jpg"></p>
 <p><a href="images/Remote-Booth-Station.xls">Remote Unit/Control Area/Station Name Key</a></p>
 
-<p>If you were unfamilar with the MTA or it's structure this should give you some context. The map above is the New York City subway system with various lines and stops. Overall there are 552 stationsand the Remote Unit </p>
+<p>If you were unfamilar with the MTA or it's structure this should give you some context. The map above is the New York City subway system with various lines and stops. Overall there are 552 stations and the Remote Unit xls file linked above gives  a key of all of the stations. </p>
 
 <h3>
 <a name="Summary-Statistics" class="anchor" href="#SummaryStatistics"><span class="octicon octicon-link"></span></a>Summary Statistics.</h3>
@@ -80,10 +80,15 @@ gas              131951     4.04     0.04     3.94     3.98     4.05     4.07   
 
 <p> One of the issues that I did wind up having with my gas data was that I was not able to find data that was on that minute of a timescale and from areas in the immediate surrounding area of the particular station which would have been ideal. Instead, what I was able to find was the weekly gas data for the region, which I then imputed for the matching weeks, which is not an ideal substitute. Adding on to this that statistical variation in the data. This data though does give similar results that I had obtained in writing my Economics Senior Seminar Thesis where I discussed the impact of petrol taxes on rail ridership in the Eurozone. In addition, the economic theory comparing public and private transportation is very well established and my results do agree with it. Overall, while not having the most quality data available for this portion of the analysis I am very confident of my results given past work by others and myself in economics and data analysis. If one wanted a more robsut result of this in particular I would recommend looking at larger time scales of weeks if not months as I did previously.</p>
 
+<h3>
+<a name="Data Visuals" class="anchor" href="Data Visuals"><span class="octicon octicon-link"></span></a>Data Visuals.</h3>
+<p><img src = "images/netLogEntries.png"></p>
+<p><img src = "images/entryFills.png"></p>
+<p><img src = "images/logEntEx.png"></p>
 
 
 <h3>
-<a name="Stata Regression" class="anchor" href="StataRegression"><span class="octicon octicon-link"></span></a>Summary Statistics.</h3>
+<a name="Stata Regression" class="anchor" href="StataRegression"><span class="octicon octicon-link"></span></a>Stata Regression.</h3>
 <pre><code>
 
 . reg ENTRIESn_hourly EXITSn_hourly meanpressurei meandewpti fog rain meantempi precipi gas stat*
