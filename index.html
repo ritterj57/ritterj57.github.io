@@ -127,14 +127,17 @@ meanpressurei |   -.139012   .0301263    -4.61   0.000     -.198059   -.0799649
 <p><img src = "images/regeq.PNG"></p>
 
 
-<p>Now on to the juicy stuff, the actual statistical regressions. </p>
+<p>Now on to the juicy stuff, the actual statistical regressions. As you can see in the regression equation image I chose to represent the equation in mostly log-level format. I think this is the best choice as the variables used in this regression have an intuitive understanding to them. If I talk about the temperature going up 5 degrees Farenheit or the price of gas going up 10 cents per gallon this is something that everyone can see in their minds eye. With the hourly entrants that impact is mostly clearly seen by a percent change as the number of people entering can vary so widely. If I were to tell you that 100 more people would be entering a turnstile during the dead of night that's vastly different than if I'm talking about a jam packed train during morning rushhour. If I were instead to tell you that I expected a 2% increase on that train that would make sense relative to the passengers on there.  </p>
 
 <p>To start things off I suppose we should talk about R^2. There would be no point in talking about this regression if this value was low and for the purposes of this analysis this value is actually quite high. This shouldn't be a surprise as one would expect that the number of entrants are conditional upon things like weather, the number of people exiting and gas prices which represent a substitute good</p>
 <p>The next thing that I wasnted to talk about in general is that most of these variables in my regression are statistically significantly different from 0 and thus we can reject the null hypothesis on almost all of them. The two exceptions being rain, which is statistically significant at the 10% level but not at the 5% level and preciptation which is not statistically significant at all. </p>
 <p>Exits being in log form along with entrants means that for every 1% increase in exits we would expect a .5661702% increase in entrants. </p>
 <p> I'll admit that I don't know a lot about air pressure but luckily if we just read the data and distibutions we should make sense of changes to air pressure without worrying about what air pressure itself means. If I were to say that today we have an increase in pressure equavalent to one standard deviation,  0.13, from the mean this should make sense to most people. This part of the regression is in log-level format so if we are taking 0.13 to be our change in units then we need to multiply this by the coefficent from mean pressure in the regression and then multiply by 100 to get the expected percent change in the number of entransts. After performing this calculation we arrive at -1.81%. In other words mean pressure changing by one standard deviation will result in an almost 2% decrease in the number of riders for that day.</p>
 <p><img src = "images/dewpoint.PNG"></p>
-<p>While I don't know much about air pressure  </p>
+<p>While I don't know much about air pressure, dew point is something that I have seen and used before. Dew point is directly related to relative humidity as the above chart shows, the higher the dew point is the more humid it is, until the dew point is the tempreature at which point you are at 100% relative humidity. One can think of dew points as a form of absolute measure of humidity as opposed to relative. Dew points can never be above the temperature as then the air would release moisture in the form of condensation such as when you see morning dew outside early in the morning. </p>
+<p>All that being said about dew points if we now look at the regression we see that by nature of it being log level regression that if we raised the dew point by about the standard deviation, 10 degrees, then we'll see a decrease in riders by 2%.</p>
+
+<p>asdf</p>
 
 
 
