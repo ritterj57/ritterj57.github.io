@@ -142,7 +142,31 @@ meanpressurei |   -.139012   .0301263    -4.61   0.000     -.198059   -.0799649
 
 <p>Temperature, according to the regression model if we were to increase the temperature by 10 degrees we would see about a 5.74 percent decrease in the number of entrants. I would guess that on nicer days that more people chose to venture outside to travel and possibly that the subway may become more unpleasant the warmer it is.</p>
 
-<p>Lastly I wanted to talk about the gas variable. </p>
+<p>Lastly I wanted to talk about the gas variable. Using the regression here as stated we see that if we increase the price of gas by it's standard deviation of 4 cents then we'll see a decrease in ridership of 3.41%. This result though we should regard with some caution as it's counter-intuitive to a well known result from economics in that if a price of a subsitute good goes up then more people will prefer it's competition. 
+</p>
+<pre><code>
+. reg lnEnt gas lnExt stat*
+
+      Source |       SS       df       MS              Number of obs =  115254
+-------------+------------------------------           F(465,114788) =  414.43
+       Model |   286951.31   465  617.099591           Prob > F      =  0.0000
+    Residual |   170923.36114788  1.48903509           R-squared     =  0.6267
+-------------+------------------------------           Adj R-squared =  0.6252
+       Total |   457874.67115253  3.97277876           Root MSE      =  1.2203
+
+------------------------------------------------------------------------------
+       lnEnt |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         gas |   .2349049   .0902831     2.60   0.009     .0579513    .4118584
+       lnExt |   .5668473   .0027148   208.80   0.000     .5615265    .5721682
+</pre></code>
+
+<p>As we can see here in this regression which is the same as above minus the weather variables we see that gas is statistically significant and has a positive coefficent. I believe a result such as this is what we should have seen in in the regression from above. One thing that could have caused this difference is that gas prices somehow have an impact on the MTA itself, such as with the bus but I don't think the bus system contributes that much to overall volume and the use of dummy station variables should have nixed that out. Another cause could be that of spurious relationship between gas, entries and some other variable which is plausible. But I think what is really causing it is that my imputation of gas prices over this set of data is causing errors in variables and thus leading to the wrong conclusion based off of the data. The assumptions are just too agressious to come close to satisfying the OLS regression requirements. </p>
+
+<p><img src = "images/tableOut.PNG"></p>
+
+<p>Finally if all of that above was too wordy here is a simple table that should clarify things that I was talking about. </p>
+
 
         </section>
 
